@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :articles
   get 'home_page/home_index' , to: 'home_page#home_index' , as: 'mypage'
   get 'home_page/home_show'
   devise_for :accounts
